@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мода | Мероприятия в мире моды</title>
+    <link rel="stylesheet" href="css/styles_3.css">
+</head>
+<body>
+    <div class="dashboard">
+        <!-- ========== ЕДИНЫЙ КРАСНЫЙ БЛОК ========== -->
+        <div class="red-panel-unified">
+            <div class="red-grid">
+                <div class="red-col">
+                    <div class="orange-title-block">
+                        <h1>МИР МОДЫ</h1>
+                    </div>
+                </div>
+                <div class="red-col">
+                    <div class="search-wrapper">
+                        <input type="text" placeholder="Поиск по сайту..." value="подиум">
+                        <button>🔍 Найти</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========== КОНТЕНТ ПОД КРАСНЫМ БЛОКОМ (две колонки) ========== -->
+        <div class="content-grid">
+            <!-- ЛЕВАЯ КОЛОНКА КОНТЕНТА -->
+            <div class="content-col">
+                <div class="darkgray-block small">
+                    <h2>✨ НОВЫЕ КОЛЛЕКЦИИ ✨</h2>
+                </div>
+
+                <div class="gray-info-block">
+                    <p>👗 <strong>Высокая мода и тенденции сезона</strong> — мир моды постоянно меняется, диктуя новые правила стиля. От кутюр и прет-а-порте — выбирай свой путь.</p>
+                    <p>🌟 Подиумы Парижа, Милана, Лондона и Нью-Йорка задают тон. Яркие показы, эксклюзивные коллекции и культовые дизайнеры формируют облик современной моды.</p>
+                    <p>👠 Следи за трендами, открывай новые имена и вдохновляйся стилем. Мода — это способ самовыражения и искусство, доступное каждому.</p>
+                    <p>📸 Фэшн-недели, премьеры коллекций, интервью с дизайнерами — всё это ждёт вас в нашем модном пространстве.</p>
+                </div>
+
+                <div class="photo-carousel">
+                    <div class="carousel-container">
+                        <div class="carousel-btn">◀</div>
+                        <div class="carousel-image">
+                            <div class="photo-frame">
+                                <div class="photo-content">
+                                    <span class="photo-icon">👗</span>
+                                    <div class="photo-text">ВЕЧЕРНЯЯ КОЛЛЕКЦИЯ</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-btn">▶</div>
+                    </div>
+                    <div class="carousel-dots">
+                        <div class="dot active"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                    <div class="carousel-caption">★ ФОТО 1/3 | кнопки для навигации (визуал) ★</div>
+                </div>
+            </div>
+
+            <!-- ПРАВАЯ КОЛОНКА КОНТЕНТА (обратный порядок) -->
+            <div class="content-col">
+                <div class="photo-carousel">
+                    <div class="carousel-container">
+                        <div class="carousel-btn">◀</div>
+                        <div class="carousel-image">
+                            <div class="photo-frame">
+                                <div class="photo-content">
+                                    <span class="photo-icon">👠</span>
+                                    <div class="photo-text">ПОДИУМ ПАРИЖА</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-btn">▶</div>
+                    </div>
+                    <div class="carousel-dots">
+                        <div class="dot active"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                    <div class="carousel-caption">★ ФОТО 1/3 | листайте визуально ★</div>
+                </div>
+
+                <div class="darkgray-block small">
+                    <h2>🎯 ТРЕНДЫ СЕЗОНА 🎯</h2>
+                </div>
+
+                <div class="gray-info-block">
+                    <p>🔥 <strong>Актуальные тренды и must-have</strong> — минимализм, винтаж, яркие акценты и эклектика. Узнай, что будет в моде в этом сезоне.</p>
+                    <p>💎 Дизайнеры предлагают смелые решения: от неоновых оттенков до классического чёрного. Сочетай несочетаемое и создавай уникальный образ.</p>
+                    <p>👜 Аксессуары, обувь, сумки — детали, которые завершают look. Будь в центре модной вселенной вместе с нашим гидом по стилю.</p>
+                    <p>⚡ Эксклюзивные интервью с модельерами, репортажи с показов и советы стилистов — всё для твоего безупречного вкуса.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========== ФОРМА ДЛЯ ЛАБОРАТОРНОЙ РАБОТЫ №8 (ВАРИАНТ 39 - МОДА) ========== -->
+        <div class="form-card">
+            <div class="form-header">
+                <h3>📋 ДОБАВЛЕНИЕ ИНФОРМАЦИИ О МЕРОПРИЯТИИ В МИРЕ МОДЫ</h3>
+            </div>
+            <div class="fashion-form">
+                <form name="fashionEventForm" method="post" action="#">
+                    <div class="form-row">
+                        <label>📌 Название мероприятия:</label>
+                        <input type="text" name="event_name" placeholder="Неделя моды в Париже" value="Fashion Week">
+                    </div>
+                    <div class="form-row">
+                        <label>🏢 Проводящая организация:</label>
+                        <input type="text" name="organizer" placeholder="Fashion Council, Vogue" value="Fédération de la Haute Couture">
+                    </div>
+                    <div class="form-row">
+                        <label>🌍 Страна проведения:</label>
+                        <select name="country">
+                            <option>Франция</option>
+                            <option>Италия</option>
+                            <option selected>США</option>
+                            <option>Великобритания</option>
+                            <option>Япония</option>
+                            <option>Украина</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <label>🏙️ Город проведения:</label>
+                        <select name="city">
+                            <option>Париж</option>
+                            <option>Милан</option>
+                            <option selected>Нью-Йорк</option>
+                            <option>Лондон</option>
+                            <option>Токио</option>
+                            <option>Киев</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <label>📅 Дата проведения:</label>
+                        <input type="date" name="event_date" value="2025-09-10">
+                    </div>
+                    <div class="form-row">
+                        <label>⏰ Время начала:</label>
+                        <input type="time" name="event_time" value="19:00">
+                    </div>
+                    <div class="form-row">
+                        <label>📞 Телефон:</label>
+                        <input type="tel" name="phone" placeholder="+7 (999) 123-45-67" value="+33 1 23 45 67 89">
+                    </div>
+                    <div class="form-row">
+                        <label>📧 E-mail:</label>
+                        <input type="email" name="email" placeholder="info@fashionweek.com" value="press@fashionweek.nyc">
+                    </div>
+                    <div class="form-row">
+                        <div class="checkbox-inline">
+                            <input type="checkbox" name="is_periodic" id="periodic">
+                            <label for="periodic">📅 Периодическое мероприятие (проводится регулярно)</label>
+                        </div>
+                    </div>
+                    <div class="form-buttons">
+                        <button type="submit" style="cursor:default;">📩 Отправить</button>
+                        <button type="reset" style="cursor:default;">🗑️ Очистить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- ========== ДЕКОРАТИВНЫЙ НИЖНИЙ БЛОК ========== -->
+        <div class="bottom-extender">
+            <div class="bottom-decoration">
+                <div class="deco-line"></div>
+                <div class="deco-line"></div>
+                <div class="deco-line"></div>
+            </div>
+            <div class="bottom-text">
+                ✦ МОДНАЯ ОДИССЕЯ ✦ ТВОЙ СТИЛЬ ✦ ГЛАВНЫЕ ПОКАЗЫ ✦
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>О ПРОЕКТЕ</h3>
+                <p>Портал о моде — новости подиумов, коллекции ведущих дизайнеров, тренды и вдохновение для создания неповторимого стиля.</p>
+                <p>© 2024 Fashion Theme</p>
+            </div>
+            <div class="footer-section">
+                <h3>НАВИГАЦИЯ</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Галерея образов</a></li>
+                    <li><a href="#">Дизайнеры</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>РЕСУРСЫ</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Fashion-блог</a></li>
+                    <li><a href="#">Календарь показов</a></li>
+                    <li><a href="#">Lookbook</a></li>
+                    <li><a href="#">Помощь</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>СВЯЗАТЬСЯ</h3>
+                <p>📧 info@fashion-theme.ru</p>
+                <p>📞 +7 (999) 123-45-67</p>
+                <div class="social-icons">
+                    <div class="social-icon">📘</div>
+                    <div class="social-icon">📷</div>
+                    <div class="social-icon">🐦</div>
+                    <div class="social-icon">🎵</div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>✦ FASHION THEME | ВСЕ ПРАВА ЗАЩИЩЕНЫ | 2024 ✦</p>
+        </div>
+    </footer>
+</body>
+</html>
