@@ -576,3 +576,14 @@ body {
 .darkgray-block.small h2::after {
     content: " 👠";
 }
+
+.photo-content img {
+    max-width: 90%;
+    max-height: 500px;
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
