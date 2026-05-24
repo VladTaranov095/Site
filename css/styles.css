@@ -405,3 +405,149 @@ body {
         max-width: 200px;
     }
 }
+
+/* ===== АДАПТАЦИЯ ДЛЯ ПЛАНШЕТОВ (уже есть, но продублирую на всякий случай) ===== */
+@media (max-width: 900px) {
+    .header {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .header-right {
+        text-align: left;
+    }
+    .button-group {
+        justify-content: flex-start;
+    }
+    .yellow-block {
+        flex-direction: column;
+        text-align: center;
+    }
+    .two-columns {
+        flex-direction: column;
+    }
+    .text-with-img {
+        flex-direction: column;
+    }
+    .text-with-img img {
+        width: 100%;
+        max-width: 200px;
+    }
+}
+
+/* ===== АДАПТАЦИЯ ДЛЯ ТЕЛЕФОНОВ (ширина до 600px) ===== */
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+    
+    .header-left h1 {
+        font-size: 1.5rem;
+    }
+    
+    .header-left h2 {
+        font-size: 1rem;
+    }
+    
+    .search-box {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .button-group {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    
+    .btn-small {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+    
+    .yellow-block {
+        padding: 15px;
+    }
+    
+    .yellow-text h3 {
+        font-size: 1.3rem;
+    }
+    
+    .yellow-text p {
+        font-size: 14px;
+    }
+    
+    .yellow-img img {
+        height: auto;
+        max-width: 100%;
+    }
+    
+    .black-block, .white-block {
+        padding: 15px;
+    }
+    
+    .image-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .image-grid img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .white-block h2 {
+        font-size: 1.3rem;
+    }
+    
+    .white-text-with-btn p {
+        font-size: 14px;
+    }
+    
+    .btn-inline {
+        float: none;
+        display: inline-block;
+        margin: 10px 0;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .text-with-img p {
+        font-size: 14px;
+    }
+    
+    .star-btn {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+    
+    .footer {
+        font-size: 12px;
+        padding: 15px;
+    }
+}
+
+
+@media (max-width: 400px) {
+    body {
+        padding: 10px;
+    }
+    
+    .header-left h1 {
+        font-size: 1.3rem;
+    }
+    
+    .yellow-text h3 {
+        font-size: 1.1rem;
+    }
+    
+    .yellow-text p {
+        font-size: 12px;
+    }
+    
+    .white-block h2 {
+        font-size: 1.1rem;
+    }
+    
+    .white-text-with-btn p {
+        font-size: 12px;
+    }
+}
